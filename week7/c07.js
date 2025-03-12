@@ -13,9 +13,17 @@ function misc() {
 }
 
 function manipulate(){
-    let word = "HELLO"
+    let word = "HELLOE"
+    let target = "E"
+    let indexof = []
     p("chartat[1]",word[1])
     p("slice",word.slice(1,3))
 
+    for(i=0;i<=word.length;i++){
+        if (word[i]===target){
+            indexof.push(i)
+        }
+    }
+    p("indexof",indexof)
 }
-manipulate()
+
