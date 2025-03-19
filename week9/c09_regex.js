@@ -15,7 +15,22 @@ function createRegex(){
 
     for(let o of "miscellaneouse@gmail.com.omegalul@gmail.com".matchAll(legeg)) p(o)
     p("miscellaneo123use22@gmail.com".match(number))
-
+    
+    
 }
 
-createRegex()
+function regex(){
+    let e1 = /\s*(?<name>[^\s]+)\s?(?:(?<middle>[^\s]+))?\s+(?<lastname>[^\s]+)\s<(?<email>[^@\s]+)@(?<domain>[^\s>]+)>\s*/i
+    
+    const m1 = "Taiyo Yamamoto <taiyo@gmail.com> OLO DIC <bigOLDEO@email.com> ".match(e1)
+    const data = {
+        firstname : m1.groups.name,
+        lastname : m1.groups.lastname,
+        email : m1.groups.email,
+        domain : m1.groups.domain
+    }
+    p(m1)
+    p(data)
+}
+
+regex()

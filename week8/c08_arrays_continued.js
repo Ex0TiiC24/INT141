@@ -6,7 +6,7 @@ const p = (...a) =>{
 function creating() {
     let ar1 = [10,"two",false,0.2,null,"two"]
     let ar2 = new Array("x","y",undefined)
-    let ar3 = Array(5)
+    let ar3 = new Array(2)
     let ar4 = Array.of(5)
     let ar5 = Array.from("hello")
     
@@ -17,6 +17,8 @@ function creating() {
     p(ar5)
     
 }
+
+creating()
 
 function typeChecking() {
     let ar = [10,undefined,null,Infinity,NaN,"","last"]
@@ -50,4 +52,3 @@ function asStackAndQueue(){
     p(ar)
 }
 
-asStackAndQueue()
